@@ -1,0 +1,81 @@
+div {
+  border: solid 0.1rem;
+  width: auto;
+  margin: 0.4rem;
+  padding: 0.6rem;
+}
+.first {
+  border-color: yellowgreen;
+  background-color: #eeff00;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+}
+.second {
+  border-color: black;
+  background-color: #4148f7;
+  width: 200px;
+  height: 300px;
+  font-weight: bold;
+}
+.third {
+  border-color: orchid;
+  background-color: #fd2d2d;
+  width: 200px;
+  height: 300px;
+}
+.fourth {
+  border-color: orange;
+  background-color: #000000;
+  width: 200px;
+  height: 300px;
+  color: azure;
+}
+@media screen and (min-width: 481px) {
+  body {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 992px) and (orientation: landscape) {
+  body {
+    margin: 0;
+  }
+  .first {
+    position: absolute;
+    left: 100px;
+  }
+  .second {
+    position: absolute;
+    left: 330px;
+  }
+  .third {
+    position: absolute;
+    left: 100px;
+    top: 340px;
+  }
+  .fourth {
+    position: absolute;
+    left: 330px;
+    top: 340px;
+  }
+}
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  .first {
+    position: absolute;
+    left: 0;
+  }
+  .second {
+    position: absolute;
+    left: 230px;
+  }
+  .third {
+    position: absolute;
+    left: 460px;
+    top: 1px;
+  }
+  .fourth {
+    position: absolute;
+    left: 690px;
+    top: 1px;
+  }
+}
